@@ -15,7 +15,7 @@ Run this from the project directory and follow the prompts to choose your Fly ap
 fly launch --no-deploy
 ```
 
-`fly launch` creates the app and generates `fly.toml`; this repository intentionally does not include an account-specific Fly config. Review the generated file and make sure the HTTP service uses internal port `8081` (the port exposed by the Dockerfile). Add this mount configuration so Telegram Bot API data is persisted:
+`fly launch` creates the app and generates `fly.toml`; this repository intentionally does not include an account-specific Fly config. Review the generated file and make sure the HTTP service uses internal port `8080` (the port exposed by the Dockerfile). Add this mount configuration so Telegram Bot API data is persisted:
 
 ```toml
 [[mounts]]
